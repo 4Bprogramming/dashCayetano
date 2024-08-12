@@ -15,7 +15,7 @@ function Facturas() {
                     <Image src='/images/cayetano.png' alt='cayetano' width={200} height={200} />
                   </div>
                 </div>
-                <div classNamiddle-lefte={styles.invoiceHeadTopRight}>
+                <div className={styles.invoiceHeadTopRight}>
                   <div className={styles.textEnd}>{/* <h3>Factura</h3> */}</div>
                 </div>
               </div>
@@ -121,15 +121,15 @@ function Facturas() {
               </p>
 
               <div className={styles.invoiceBtns}>
-                <button type='button' className={styles.btnCancelar} onclick='printInvoice()'>
+                <button type='button' className={styles.btnCancelar}>
                   <span>
-                    <i class='fa-solid fa-print'></i>
+                   
                   </span>
                   <span>Cancelar</span>
                 </button>
                 <button type='button' className={styles.btnDescarga}>
                   <span>
-                    <i class='fa-solid fa-download'></i>
+                  
                   </span>
                   <span >Download</span>
                 </button>
