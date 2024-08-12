@@ -1,0 +1,198 @@
+
+
+.ul{
+    list-style-type: none;
+}
+.ul li{
+    margin: 2px 0;
+}
+
+/* text colors */
+.text-dark{
+    color: var(--dark-color);
+}
+.text-blue{
+    color: var(--blue-color);
+}
+.textEnd{
+    text-align: right;
+}
+.textCenter{
+    text-align: center;
+}
+.textStart{
+    text-align: left;
+}
+.textBold{
+    font-weight: 700;
+}
+/* hr line */
+.hr{
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+/* borderBottom */
+.borderBottom{
+  
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    width: 120%;
+}
+
+/* body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-color);
+    font-size: 14px;
+} */
+.invoiceWrapper{
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.invoice{
+    max-width: 850px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: var(--white-color);
+    padding: 70px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    min-height: 920px;
+}
+.invoiceHeadTopLeft img{
+    width: 130px;
+}
+.invoiceHeadTopRight h3{
+    font-weight: 500;
+    font-size: 27px;
+    color: var(--blue-color);
+}
+.invoiceHeadMiddle, .invoiceHeadBottom{
+    padding: 16px 0;
+}
+.invoiceBody{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+.invoiceBody table{
+    border-collapse: collapse;
+    border-radius: 4px;
+    width: 100%;
+}
+.invoiceBody table td, .invoiceBody table th{
+    padding: 12px;
+}
+.invoiceBody table tr{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.invoiceBody table thead{
+    background-color: rgba(0, 0, 0, 0.02);
+}
+.invoiceBodyInfoItem{
+    
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+.invoiceBodyInfoItem .infoItemTd{
+    
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.02);
+    width: 100%;
+}
+
+.invoice-foot{
+    padding: 30px 0;
+}
+.invoice-foot p{
+    font-size: 12px;
+}
+.invoiceBtns{
+    display: flex;
+    -moz-box-pack: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.invoiceBtn{
+    padding: 3px 9px;
+    color: green;
+    font-family: inherit;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.invoiceHeadTop{
+  
+    height: 150px;
+    margin-top: -70px;
+}
+
+.invoiceHeadTop, .invoiceHeadMiddle, .invoiceHeadBottom{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 10px;
+}
+.btnDescarga{
+    background-color: rgb(67, 24, 223);
+    color: white;
+    width: 150px;
+    border-radius: 30px;
+    height: 40px;
+}
+.btnCancelar{
+    background-color: red;
+    color: white;
+    width: 150px;
+    border-radius: 30px;
+    height: 40px;
+}
+
+@media screen and (max-width: 992px){
+    .invoice{
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .invoiceHeadTop, .invoiceHeadMiddle, .invoiceHeadBottom{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .invoiceHeadBottomRight{
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .invoice *{
+        text-align: left;
+    }
+    .invoice{
+        padding: 28px;
+    }
+}
+
+.overflowView{
+    overflow-x: scroll;
+}
+.invoiceBody{
+    min-width: 600px;
+}
+
+@media print{
+    .print-area{
+        visibility: visible;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        overflow: hidden;
+    }
+
+    .overflowView{
+        overflow-x: hidden;
+    }
+
+    .invoiceBtns{
+        display: none;
+    }
+}
