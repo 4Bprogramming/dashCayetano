@@ -9,6 +9,10 @@ import AccountPlusOutline from 'mdi-material-ui/AccountPlusOutline'
 import AlertCircleOutline from 'mdi-material-ui/AlertCircleOutline'
 import PeopleOutlineIcon from '@mui/icons-material/PeopleOutline';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
+import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
+import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
+import RequestQuoteIcon from '@mui/icons-material/RequestQuote';
+import HolidayVillageIcon from '@mui/icons-material/HolidayVillage';
 
 const navigation = () => {
   return [
@@ -36,11 +40,26 @@ const navigation = () => {
       path: '/facturas'
     },
     {
-      title: 'Tables',
-      icon: Table,
+      title: 'Cierre de prestamo',
+      icon: RequestQuoteIcon,
       path: '/tables'
     },
-   
+    {
+      title: 'Vehiculos',
+      icon: DirectionsCarIcon,
+      path: '/vehiculo'
+    },
+    {
+      title: 'Inversores',
+      icon: AccountBalanceIcon,
+      path: '/inversor'
+    },
+
+    {
+      title: 'Sucursales',
+      icon: HolidayVillageIcon,
+      path: '/sucursales'
+    },
    
     {
       title: 'Cards',

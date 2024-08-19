@@ -4,23 +4,17 @@ import Card from '@mui/material/Card'
 import CardHeader from '@mui/material/CardHeader'
 
 // ** Demo Components Imports
-import TableBasic from 'src/views/tables/TableBasic'
-import TableCustomized from 'src/views/tables/TableCustomized'
+import TableStickyHeader from 'src/views/tables/TableStickyHeader'
 
 const MUITable = () => {
   return (
     <Grid container spacing={6}>
       
+    
       <Grid item xs={12}>
         <Card>
-          <CardHeader title='ANALISIS GENERAL' titleTypographyProps={{ variant: 'h6' }} />
-          <TableCustomized />
-        </Card>
-      </Grid>
-      <Grid item xs={12}>
-        <Card>
-          <CardHeader title='ANALISIS MENSUAL' titleTypographyProps={{ variant: 'h6' }} />
-          <TableBasic />
+          <CardHeader title='Nombre de la persona' titleTypographyProps={{ variant: 'h6' }} />
+          <TableStickyHeader />
         </Card>
       </Grid>
      
