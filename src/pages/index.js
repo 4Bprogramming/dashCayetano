@@ -36,7 +36,7 @@ const Dashboard = () => {
         <Grid item xs={12} md={12}>
           <TablesTotal />
           </Grid>
-          <div style={{border: '2px solid red'}}><iframe style={{width:"320px",heigh:"260px",borderRadius:"10px", boxShadow:"2px 4px 4px rgb(0 0 0 / 25%",display:"flex", justifyContent:"center" }} src="https://dolarhoy.com/i/cotizaciones/dolar-blue" frameborder="0"></iframe></div>
+          <div style={{border: '2px solid red'}}><iframe style={{width:"320px",heigh:"260px",borderRadius:"10px", boxShadow:"2px 4px 4px rgb(0 0 0 / 25%",display:"flex", justifyContent:"center" }} src="https://dolarhoy.com/i/cotizaciones/dolar-blue" ></iframe></div>
         {/* <Grid item xs={12} md={6} lg={4}>
           <WeeklyOverview />
         </Grid>
